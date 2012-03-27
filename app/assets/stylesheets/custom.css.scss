@@ -18,10 +18,9 @@ textarea {
 
 .center {
    text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+   h1 {
+     margin-bottom: 10px;
+   }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,10 +59,35 @@ h2 {
     font-weight: bold;
     line-height: 1;
    decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
 }
 
-#logo:hover {
-   color: #fff;
-   text-decoration: none;
+/* footer */
+footer {
+   margin-top: 45px;
+   padding-top: 5px;
+   border-top: 1px solid #eaeaea;
+   color: #999;
+
 }
 
+footer  a:haver {
+   color: #222;
+}
+
+footer small {
+    float: left;
+}
+
+footer ul {
+   float: right;
+   list-style: none;
+}
+
+footer ul li {
+   float: left;
+   margin-left: 10px;
+}
