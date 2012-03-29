@@ -1,6 +1,5 @@
-#encoding: utf-8
-module StaticPagesHelper
-    def full_title(page_title)
+  #encoding: utf-8
+  def full_title(page_title)
      base_title ='这个是KLY的第一个DEMO'
      if page_title.empty?
        base_title
@@ -8,4 +7,3 @@ module StaticPagesHelper
        "#{base_title} | #{page_title}"
      end
   end
-end
