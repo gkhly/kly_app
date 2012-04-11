@@ -8,11 +8,20 @@ describe "StaticPages" do
 #      get static_pages_index_path
 #      response.status.should be(200)
 #    end
-    it "应该包含 ‘主页’这个关键字" do
-      visit '/static_pages/home'
-      page.should have_content('主页')
+    it "应该包含 ‘这是我的主页面’这个关键字" do
+      visit '/home'
+      page.should have_selector('h1',text: '这是我的主页面')
     end
 
+    it "title 需要是这个" do
+      visit '/home'
+      page.should have_content('这是我的主页面')
+    end
+
+    it "help 需要有这个" do
+      visit '/help'
+      page.should have_content('这是帮助页面')
+    end
   end
 end
 
